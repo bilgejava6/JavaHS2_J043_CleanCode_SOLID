@@ -21,13 +21,22 @@ public class Runner_SOLID {
          * ICrud, IService, UserService
          * save(), findAllByUserNameAndPassword(), getAllByName()
          *
-         * O -
+         * O - Open Closed Principle (Açıklık Kapalılık İlkesi)
+         * Kodlarınız Değişime kapalı olmalı, ancak gelişime açık olmalılar.
+         * // Servis Katmanı (Product, User, Sale v.s)-> findAll(), findById(ID id), findAllByUserName(String regex);
+         * -> kod ekleme işlemleri miras yöntemi ile geliştirilere eklenir. yeni method, yeni dınıflar şeklinde ilerler
          *
-         * L
+         * L - Liskov Substitution Principle (Liskov Prensibi)
+         * Mümkün olduğu kadar gereksiz methodlardan uzak durun. Eğer bir method başka bir method ile aynı yada yakın
+         * işi yapıyorsa bunu başka bir method, sınıf içinde tanımlayarak miras alıp kullanın.
          *
-         * I
+         * I - Interface Segregation Principle
+         * Uygulamalarımız içerisinde genellikle kodlarda tutarlılık ve temiz yazım için interface oluşturur ve
+         * kullanırız. Her bir sınıf için bir soyut sınıf ya da interface oluşturuluyor. Tekrar eden ve
+         * neredeyse tüm sınıflarda kullanılan methodları tek bir interface yada interface ler hiyerarşisinde
+         * saklamak doğru olacaktır.
          *
-         * D
+         * D -
          *
          */
     }
