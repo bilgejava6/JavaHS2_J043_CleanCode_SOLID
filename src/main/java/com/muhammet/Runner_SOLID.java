@@ -36,7 +36,18 @@ public class Runner_SOLID {
          * neredeyse tüm sınıflarda kullanılan methodları tek bir interface yada interface ler hiyerarşisinde
          * saklamak doğru olacaktır.
          *
-         * D -
+         * D - Dependency Inversion Principle
+         * Bir uygulamayı yazarken, Ortak kodlamalar ve işlevler için interface,abstract class ve parent class ları
+         * kullanarak inheritance yapıyoruz. Sınıflar bir birlerini miras alamaya başladıkça bir birlerine olan
+         * bağımlılıları artmaktadır, bu sıkı bağımlılık kodun geliştirilebilir olmasının önüne geçmekte ve
+         * geliştirmeyi yavaşlatmakta bazende imkansız hale getirmektedir. Bu nedenle bağımlılıkları
+         * gevşetmek ve tersine çevirmek daha doğru olacaktır.
+         *
+         * A Class ->
+         * B Class -> extents A,
+         * C Class -> B bclazz = new B();
+         * -------
+         * Polymorphism - Çok Biçimlilik
          *
          */
     }
